@@ -29,7 +29,7 @@ func main(){
 func float32Error (){
 	println("\nfloat32Error-----------------------");
 	var f float32 = 17776211;
-	fmt.Println(f==f+1);
+	fmt.Println(f==f+1); // true
 }
 
 // 浮点数声明可以只写整数部分或者小数部分
