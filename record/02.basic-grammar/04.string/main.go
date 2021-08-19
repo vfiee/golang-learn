@@ -1,10 +1,10 @@
 /*
  * @Author: vyron
  * @Date: 2021-06-18 13:06:29
- * @LastEditTime: 2021-06-18 18:05:39
+ * @LastEditTime: 2021-08-19 19:21:15
  * @LastEditors: vyron
  * @Description: go string
- * @FilePath: /golang/record/02.basic-grammar/04.string/main.go
+ * @FilePath: /Golang/record/02.basic-grammar/04.string/main.go
  */
 
 package main
@@ -111,15 +111,17 @@ func splitString(){
 
 // 修改字符串
 func changeString(){
-	angel := "Heros never die"
+	// 英文
+	str:="abc" 
+	s2:=[]byte(str) 
+	s2[0]='b' 
+	fmt.Println(string(s2))
 
-	angleBytes := []byte(angel)
-
-	for i := 5; i <= 10; i++ {
-		angleBytes[i] = '_';
-	}
-
-	fmt.Println(string(angleBytes))
+	// 中文
+	str:="白猫" 
+	s2:=[]rune(str) 
+	s2[0]='黑' 
+	fmt.Println(string(s2))
 }
 
 // 字符串拼接
